@@ -8,6 +8,9 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button listarUsuario;
+
+    Button mostraUsuario;
     Button adUsuario;
 
     AcessoBD acessoBD;
@@ -18,13 +21,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         adUsuario=findViewById(R.id.adUsuario);
+        mostraUsuario=findViewById(R.id.mostraUsuario);
+        listarUsuario=findViewById(R.id.listarUsuario);
 
-        acessoBD=new AcessoBD(MainActivity.this);
+        acessoBD= new AcessoBD(MainActivity.this);
         mostrarUsuarioNaListView(acessoBD);
         adUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Usuario usuario=null;
+                try{
+                    usuario=new Usuario()//tem que puxar da activity
+
+                }
             }
         });
     }

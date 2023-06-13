@@ -9,25 +9,46 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintStart_toEndOf="parent">
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/adUsuario"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ADICIONAR USUARIO" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/mostraUsuario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="MOSTRAR USUARIO" />
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="MENU DE CADASTRO"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
 
-        <Button
-            android:id="@+id/listarUsuario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="LISTAR USUARIO" />
+            <Button
+                android:id="@+id/listarUsuario"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="LISTAR USUARIO" />
+
+            <Button
+                android:id="@+id/mostraUsuario"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="MOSTRAR USUARIO" />
+
+            <Button
+                android:id="@+id/adUsuario"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="ADICIONAR USUARIO" />
+        </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
