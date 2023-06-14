@@ -34,20 +34,20 @@
                 android:text="LISTAR USUARIO" />
 
             <Button
-                android:id="@+id/mostraUsuario"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:text="MOSTRAR USUARIO" />
-
-            <Button
                 android:id="@+id/adUsuario"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:text="ADICIONAR USUARIO" />
+
+            <Button
+                android:id="@+id/mostraUsuario"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="MOSTRAR USUARIO" />
         </LinearLayout>
     </LinearLayout>
 
