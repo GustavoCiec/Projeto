@@ -19,7 +19,10 @@ public class AcessoBD extends SQLiteOpenHelper {
 
     protected static final String USUARIO_IDADE="USUARIO_IDADE";
 
-    public AcessoBD(@Nullable Context context) {super(context, "ClienteBD" , null, 1);}
+    public AcessoBD(@Nullable Context context) {
+        super(context, "TABELA_USUARIO" , null, 1);
+    }
+
 
     @Override
     public void onCreate(SQLiteDatabase db){

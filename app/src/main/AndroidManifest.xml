@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Projeto"
         tools:targetApi="31">
         <activity
+            android:name=".MostrarUsuario"
+            android:exported="false" />
+        <activity
             android:name=".Usuario"
             android:exported="false" />
         <activity
