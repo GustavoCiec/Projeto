@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button adUsuario;
 
 
-    AcessoBD acessoBD;
+    Banco.AcessoBD acessoBD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
         adUsuario=findViewById(R.id.adUsuario);
         listarUsuario=findViewById(R.id.listarUsuario);
 
-        acessoBD= new AcessoBD(MainActivity.this);
+        acessoBD= new Banco.Banco(MainActivity.this);
         View.OnClickListener activity_usuario = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
-        }
+        };
         adUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

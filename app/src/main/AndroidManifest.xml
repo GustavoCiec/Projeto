@@ -12,13 +12,22 @@
         android:theme="@style/Theme.Projeto"
         tools:targetApi="31">
         <activity
+            android:name=".Adicionar_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".Main_activity_teste"
+            android:exported="false" />
+        <activity
+            android:name=".banco"
+            android:exported="false" />
+        <activity
             android:name=".MostrarUsuario"
             android:exported="false" />
         <activity
             android:name=".Usuario"
             android:exported="false" />
         <activity
-            android:name=".AcessoBD"
+            android:name=".AcessoBD$AcessoBD"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,16 +1,14 @@
 package com.example.projeto;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.projeto.Banco;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Bundle;
 
-public class AcessoBD extends SQLiteOpenHelper {
-
+public class Banco extends SQLiteOpenHelper {
+    private static final String DATABASE_NAME = "cadastro.db";
     protected static final String TABELA_USUARIO = "TABELA_USUARIO";
 
     protected static final String USUARIO_ID="ID";
@@ -19,8 +17,8 @@ public class AcessoBD extends SQLiteOpenHelper {
 
     protected static final String USUARIO_IDADE="USUARIO_IDADE";
 
-    public AcessoBD(@Nullable Context context) {
-        super(context, "TABELA_USUARIO" , null, 1);
+    public Banco(@Nullable Context context) {
+        super(context, DATABASE_NAME , null, 1);
     }
 
 
@@ -34,8 +32,9 @@ public class AcessoBD extends SQLiteOpenHelper {
 
 
 
-    public void onUpdate(SQLiteOpenHelper db, int oldVersion, int newVersion){
-
+    public void onUpdate(SQLiteDatabase db, int oldVersion, int newVersion){
+        db.execSQL("SELECT*FROM TABELA_USUARIO");
+        onCreate(db);
     }
 
     public boolean adcionarUsuario(Usuario usuario){
@@ -48,4 +47,5 @@ public class AcessoBD extends SQLiteOpenHelper {
         db.close();
         return  inserirSucedido!=-1;
     }
+
 }

@@ -12,3 +12,6 @@ public class MostrarUsuario extends AppCompatActivity {
         setContentView(R.layout.activity_usuario);
 
     }
+
+    ;
+}
